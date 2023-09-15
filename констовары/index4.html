@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Shop books">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Roman">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../книги/style3.css">
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="../книги/js3.js"></script>
+        <script src="app.js"></script>
+
+        <title>Констовары</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container-lg">
+                <div class="header__inner d-flex">
+                    <div class="header__logo">
+                        <img src="../img svg/icons8-app-store.svg" alt="">
+                    </div>
+
+                   
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Введите название товара" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-outline-secondary" type="button">Найти</button>
+                        </div>
+                      </div>
+                   
+                </div>
+                <div class="header__botoom_nav">
+                    <nav class="nav" id="nav">
+                        <a class="nav__link" href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/index.html">Главная</a>
+                        <a class="nav__link" href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/index3.html">Книги</a>
+                        <a class="nav__link" href="">Констовары</a>
+                        <a class="nav__link" href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/%D0%B8%D0%B3%D1%80%D1%83%D1%88%D0%BA%D0%B8/index5.html" >Игрушки</a>
+                        <a class="nav__link" href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/contacts/index2.html" >Контакты</a>
+                        <a class="nav__link" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </nav>
+        
+                    <button class="nav-toggle" id="nav_toggle" type="button">
+                        <span class="nav-toggle__item">Menu</span>
+                    </button>
+
+                </div>
+
+
+               
+
+            </div>
+        </header>
+
+        <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+            <div class="offcanvas-header">
+                <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas">BookShop</h6>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-0">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                    <li class="nav-item">
+                        <a href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/index.html" class="nav-link text-truncate">
+                            <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Главная</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/index3.html" data-bs-toggle="collapse" class="nav-link text-truncate">
+                            <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">Книги</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-truncate">
+                            <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">Констовары</span></a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/%D0%B8%D0%B3%D1%80%D1%83%D1%88%D0%BA%D0%B8/index5.html" class="nav-link text-truncate">
+                            <i class="fs-5 bi-grid"></i><span class="ms-1 d-none d-sm-inline">Игрушки</span></a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/contacts/index2.html" class="nav-link text-truncate">
+                            <i class="fs-5 bi-people"></i><span class="ms-1 d-none d-sm-inline">Контакты</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="intro__content">
+            <div class="intro__title"><h1>Констовары</h1></div>
+
+            <div class="intro__title__inner">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="рр2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Карандаш для детского планшета</h5>
+                  <p class="card-text">Hеативный блокнот с зарядным устройством, портативное зарядное устройство</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Посмотреть
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Карандаш для детского планшета</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           
+Hеативный блокнот с зарядным устройством, портативное зарядное устройство, Подарочная коробка для бизнеса, индивидуальная Настройка
+мблема на заказ(Мин. заказ 100 шт.)
+Индивидуализированная упаковка(Мин. заказ 100 шт.)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="рр1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Индивидуальный дневник</h5>
+                  <p class="card-text">Hеативный блокнот с зарядным устройством, портативное зарядное устройство</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Посмотреть
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Индивидуальный дневник</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           
+Hеативный блокнот с зарядным устройством, портативное зарядное устройство, Подарочная коробка для бизнеса, индивидуальная Настройка
+мблема на заказ(Мин. заказ 100 шт.)
+Индивидуализированная упаковка(Мин. заказ 100 шт.)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="рр3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Портативное зарядное устройство A5</h5>
+                  <p class="card-text">Hеативный блокнот с зарядным устройством, портативное зарядное устройство</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    Посмотреть
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Портативное зарядное устройство A5</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           
+Hеативный блокнот с зарядным устройством, портативное зарядное устройство, Подарочная коробка для бизнеса, индивидуальная Настройка
+мблема на заказ(Мин. заказ 100 шт.)
+Индивидуализированная упаковка(Мин. заказ 100 шт.)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+        </div>
+
+
+        
+
+        <div class="another"> <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+            <i class="bi bi-arrow-right-square-fill fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">Show</i>
+        </button>
+    </div>
+
+       <footer class="text-center text-lg-start bg-white text-muted pt-3">
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Book shop
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Категории
+            </h6>
+            <p>
+              <a href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/index3.html" class="text-reset">Книги</a>
+            </p>
+            <p>
+              <a href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B/index4.html" class="text-reset">Констовары</a>
+            </p>
+            <p>
+              <a href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/%D0%B8%D0%B3%D1%80%D1%83%D1%88%D0%BA%D0%B8/index5.html" class="text-reset">Игрушки</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Популярные товары
+            </h6>
+            <p>
+              <a href="file:///C:/Users/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD/OneDrive%20-%20%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/web%203/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D1%8F/web%20lab2/%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/index3.html" class="text-reset">Книга 3</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Констовар 2</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Констовар 1</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Игрушка 2</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Контакты</h6>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    </body>
+   
+</html>

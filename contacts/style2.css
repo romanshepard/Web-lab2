@@ -1,0 +1,296 @@
+body
+{
+    font-family: sans-serif,Arial;
+    font-size: 15px;
+    color: black;
+    background-color: #ededed !important;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    position: absolute;
+    height: 130px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__logo{
+    margin-right: 30px;
+}
+
+.header__logo img{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.header__inner{
+    flex-direction: row;
+    align-items: center;
+}
+.input-group .btn{
+    margin-left: 10px;
+    background-color: white;
+}
+
+.input-group .btn:hover{
+    background-color: rgb(84, 187, 211);
+}
+.header__botoom_nav{
+    border-top: 1px solid white;
+    color: white;
+    
+}
+.nav{
+    padding: 15px;
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+}
+.nav__link{
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.4s linear;
+}
+
+.nav__link:hover{
+    opacity: .7;
+    text-decoration: underline;
+}
+
+.ffixed{
+    position: fixed;
+}
+
+.contact{
+    padding-top: 150px;
+    
+}
+
+
+/* Nav toggle */
+.nav-toggle {
+    width: 30px;
+    padding: 10px 0;
+    display: none;
+
+    font-size: 0;
+    color: transparent;
+   
+    margin: 0 auto;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 85px;
+    right: 24px;
+    z-index: 1;
+}
+
+.nav-toggle:focus {
+    outline: 0;
+}
+
+.nav-toggle__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    transition: background .2s linear;
+}
+
+.nav-toggle.active .nav-toggle__item {
+    background: none;
+}
+
+.nav-toggle__item:before,
+.nav-toggle__item:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    transition: transform .2s linear;
+}
+
+.nav-toggle__item:before {
+    top: -8px;
+}
+
+.nav-toggle__item:after {
+    bottom: -8px;
+}
+
+.nav-toggle.active .nav-toggle__item:before {
+    transform-origin: left top;
+    transform: rotate(45deg) translate3d(0px, -2px, 0)
+}
+
+.nav-toggle.active .nav-toggle__item:after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translate3d(0px, 3px, 0);
+}
+
+
+
+.another{
+    height: 500px;
+}
+
+
+.btn.float-end
+{
+   display: block;
+   background-color: black;
+    position: fixed;
+    color: white;
+    right: 0;
+}
+
+.btn.float-end:hover{
+    background-color: white;
+    color:black;
+}
+
+.offcanvas {
+    background-color: rgb(220, 185, 11) !important;
+    color: white !important;
+}
+
+.text-truncate{
+    color: white !important;
+}
+
+.nav-link.text-truncate:hover{
+   opacity: .6;
+   text-decoration: underline;
+}
+
+.contact__inner{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.contact__title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.intro__img{
+    margin-left: 50px;
+}
+.intro__img img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+
+.button__link{
+    display: inline-block;
+}
+
+.btn.btn-primary{
+    background-color: black;
+}
+
+.btn.btn-primary:hover{
+    background-color: white;
+    color:black;
+}
+
+
+
+
+@media (max-width:500px){
+    .nav-toggle{
+        display: block;
+    }
+    
+    .nav {
+        display: none !important;
+        width: 100%;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color:black;
+    }
+
+    .nav.active {
+        display: block !important;
+    }
+
+    .nav__link {
+        display: block ;
+        margin: 0;
+        padding: 8px 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+}
+
+
+
+    
+
+
+/*
+@media (max-width:430px) {
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+    
+    .nav.active {
+    display: block;
+}
+
+
+}
+*/
