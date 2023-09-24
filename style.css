@@ -22,6 +22,11 @@ p{
     margin: 0;
 }
 
+
+.offcanvas.show:not(.hiding), .offcanvas.showing{
+    background-color: red !important;
+}
+
 .header{
     width: 100%;
     padding: 20px;
@@ -32,6 +37,14 @@ p{
     left: 0;
     z-index: 1000;
     
+}
+
+.everything__items{
+    width: 5px;
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    z-index: 10002;
 }
 
 .list-group{
@@ -198,7 +211,7 @@ p{
 
 .btn.float-end
 {
-   display: block;
+    display: none;
    background-color: black;
     position: fixed;
     color: white;
@@ -241,6 +254,11 @@ p{
     background-color: black !important;
 }
 
+
+table {
+    text-align: center;
+    margin: 20px auto;
+}
 
 @media (max-width:500px){
     .nav-toggle{

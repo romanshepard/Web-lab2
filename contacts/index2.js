@@ -24,6 +24,26 @@ $(document).ready(function(){
     });
 
 
+    $(".everything__items").on('mouseenter',function(){
+          
+        $(".offcanvas").toggleClass("show");
+
+      if($(".offcanvas").has("show"))
+      {
+         $(".offcanvas").on('mouseleave',function(){
+             $(this).removeClass("show");
+             $(this).addClass("hiding");
+            
+            
+         });
+         $(".offcanvas").removeClass("hiding");
+      }
+
+
+      
+
+    });
+
 
      /* Menu nav toggle */
      $("#nav_toggle").on("click", function(event) {

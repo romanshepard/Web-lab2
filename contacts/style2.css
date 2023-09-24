@@ -22,6 +22,14 @@ p{
     margin: 0;
 }
 
+.everything__items{
+    width: 5px;
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    z-index: 10002;
+}
+
 .header{
     width: 100%;
     padding: 20px;
@@ -176,7 +184,7 @@ p{
 
 .btn.float-end
 {
-   display: block;
+   display: none;
    background-color: black;
     position: fixed;
     color: white;
